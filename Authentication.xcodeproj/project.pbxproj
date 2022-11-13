@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3061B9728E8B0CF0019D52D /* Authentication.h in Headers */ = {isa = PBXBuildFile; fileRef = F3061B9628E8B0CF0019D52D /* Authentication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3061C8B28EB38880019D52D /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3061C8A28EB38880019D52D /* Credentials.swift */; };
+		F3D40F4F28EB399F001274E1 /* RxAuthenticationSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D40F4E28EB399F001274E1 /* RxAuthenticationSerivce.swift */; };
+		F3D40FB428EB3D91001274E1 /* RxAWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D40FB328EB3D91001274E1 /* RxAWSMobileClient.swift */; };
+		F3D40FB828EB3F67001274E1 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D40FB728EB3F67001274E1 /* Configuration.swift */; };
+		F3D40FBA28EB41F0001274E1 /* Jwt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D40FB928EB41F0001274E1 /* Jwt.swift */; };
+		F3D40FBC28EB4461001274E1 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D40FBB28EB4461001274E1 /* Error.swift */; };
+		F3D4AAC229212BD400BC83C1 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D4AAC129212BCF00BC83C1 /* Shared.framework */; };
+		F3D4AACD29212C4200BC83C1 /* Persistent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3D4AACC29212C3B00BC83C1 /* Persistent.framework */; };
+		F3F76A3929204150006B1AC2 /* AWSAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = F3F76A3829204150006B1AC2 /* AWSAuthCore */; };
+		F3F76A3B29204150006B1AC2 /* AWSCognitoIdentityProvider in Frameworks */ = {isa = PBXBuildFile; productRef = F3F76A3A29204150006B1AC2 /* AWSCognitoIdentityProvider */; };
+		F3F76A3D29204150006B1AC2 /* AWSCognitoIdentityProviderASF in Frameworks */ = {isa = PBXBuildFile; productRef = F3F76A3C29204150006B1AC2 /* AWSCognitoIdentityProviderASF */; };
+		F3F76A3F29204150006B1AC2 /* AWSCore in Frameworks */ = {isa = PBXBuildFile; productRef = F3F76A3E29204150006B1AC2 /* AWSCore */; };
+		F3F76A4129204150006B1AC2 /* AWSMobileClientXCF in Frameworks */ = {isa = PBXBuildFile; productRef = F3F76A4029204150006B1AC2 /* AWSMobileClientXCF */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3D4AAC029212BCF00BC83C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3D4AABC29212BCF00BC83C1 /* Shared.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3061BA728E8B3460019D52D;
+			remoteInfo = Shared;
+		};
+		F3D4AAC529212BDD00BC83C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3D4AABC29212BCF00BC83C1 /* Shared.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F3061BA628E8B3460019D52D;
+			remoteInfo = Shared;
+		};
+		F3D4AACB29212C3B00BC83C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3D4AAC729212C3B00BC83C1 /* Persistent.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F3061C6A28E8B78B0019D52D;
+			remoteInfo = Persistent;
+		};
+		F3D4AAD029212C4B00BC83C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3D4AAC729212C3B00BC83C1 /* Persistent.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F3061C6928E8B78B0019D52D;
+			remoteInfo = Persistent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3061B9328E8B0CF0019D52D /* Authentication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Authentication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3061B9628E8B0CF0019D52D /* Authentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Authentication.h; sourceTree = "<group>"; };
+		F3061C8A28EB38880019D52D /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		F3D40F4E28EB399F001274E1 /* RxAuthenticationSerivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAuthenticationSerivce.swift; sourceTree = "<group>"; };
+		F3D40FB328EB3D91001274E1 /* RxAWSMobileClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxAWSMobileClient.swift; sourceTree = "<group>"; };
+		F3D40FB728EB3F67001274E1 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		F3D40FB928EB41F0001274E1 /* Jwt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jwt.swift; sourceTree = "<group>"; };
+		F3D40FBB28EB4461001274E1 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		F3D4AABC29212BCF00BC83C1 /* Shared.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Shared.xcodeproj; path = ../../Shared/Shared.xcodeproj; sourceTree = "<group>"; };
+		F3D4AAC729212C3B00BC83C1 /* Persistent.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Persistent.xcodeproj; path = ../../Persistent/Persistent.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3061B9028E8B0CF0019D52D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D4AACD29212C4200BC83C1 /* Persistent.framework in Frameworks */,
+				F3F76A3B29204150006B1AC2 /* AWSCognitoIdentityProvider in Frameworks */,
+				F3D4AAC229212BD400BC83C1 /* Shared.framework in Frameworks */,
+				F3F76A3929204150006B1AC2 /* AWSAuthCore in Frameworks */,
+				F3F76A4129204150006B1AC2 /* AWSMobileClientXCF in Frameworks */,
+				F3F76A3F29204150006B1AC2 /* AWSCore in Frameworks */,
+				F3F76A3D29204150006B1AC2 /* AWSCognitoIdentityProviderASF in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3061B8928E8B0CF0019D52D = {
+			isa = PBXGroup;
+			children = (
+				F3D4AAAF29212B4C00BC83C1 /* Frameworks */,
+				F3061B9528E8B0CF0019D52D /* Authentication */,
+				F3061B9428E8B0CF0019D52D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3061B9428E8B0CF0019D52D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3061B9328E8B0CF0019D52D /* Authentication.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3061B9528E8B0CF0019D52D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F3D40F4D28EB3985001274E1 /* Services */,
+				F3061C8928EB38400019D52D /* Models */,
+				F3061B9628E8B0CF0019D52D /* Authentication.h */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F3061C8928EB38400019D52D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3061C8A28EB38880019D52D /* Credentials.swift */,
+				F3D40FB728EB3F67001274E1 /* Configuration.swift */,
+				F3D40FB928EB41F0001274E1 /* Jwt.swift */,
+				F3D40FBB28EB4461001274E1 /* Error.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3D40F4D28EB3985001274E1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F3D40F4E28EB399F001274E1 /* RxAuthenticationSerivce.swift */,
+				F3D40FB328EB3D91001274E1 /* RxAWSMobileClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F3D4AAAF29212B4C00BC83C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3D4AAC729212C3B00BC83C1 /* Persistent.xcodeproj */,
+				F3D4AABC29212BCF00BC83C1 /* Shared.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3D4AABD29212BCF00BC83C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3D4AAC129212BCF00BC83C1 /* Shared.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3D4AAC829212C3B00BC83C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3D4AACC29212C3B00BC83C1 /* Persistent.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F3061B8E28E8B0CF0019D52D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3061B9728E8B0CF0019D52D /* Authentication.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F3061B9228E8B0CF0019D52D /* Authentication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3061B9A28E8B0CF0019D52D /* Build configuration list for PBXNativeTarget "Authentication" */;
+			buildPhases = (
+				F3061B8E28E8B0CF0019D52D /* Headers */,
+				F3061B8F28E8B0CF0019D52D /* Sources */,
+				F3061B9028E8B0CF0019D52D /* Frameworks */,
+				F3061B9128E8B0CF0019D52D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3D4AAD129212C4B00BC83C1 /* PBXTargetDependency */,
+				F3D4AAC629212BDD00BC83C1 /* PBXTargetDependency */,
+			);
+			name = Authentication;
+			packageProductDependencies = (
+				F3F76A3829204150006B1AC2 /* AWSAuthCore */,
+				F3F76A3A29204150006B1AC2 /* AWSCognitoIdentityProvider */,
+				F3F76A3C29204150006B1AC2 /* AWSCognitoIdentityProviderASF */,
+				F3F76A3E29204150006B1AC2 /* AWSCore */,
+				F3F76A4029204150006B1AC2 /* AWSMobileClientXCF */,
+			);
+			productName = Authentication;
+			productReference = F3061B9328E8B0CF0019D52D /* Authentication.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3061B8A28E8B0CF0019D52D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					F3061B9228E8B0CF0019D52D = {
+						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
+					};
+				};
+			};
+			buildConfigurationList = F3061B8D28E8B0CF0019D52D /* Build configuration list for PBXProject "Authentication" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3061B8928E8B0CF0019D52D;
+			packageReferences = (
+				F3F76A3729204150006B1AC2 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
+			);
+			productRefGroup = F3061B9428E8B0CF0019D52D /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F3D4AAC829212C3B00BC83C1 /* Products */;
+					ProjectRef = F3D4AAC729212C3B00BC83C1 /* Persistent.xcodeproj */;
+				},
+				{
+					ProductGroup = F3D4AABD29212BCF00BC83C1 /* Products */;
+					ProjectRef = F3D4AABC29212BCF00BC83C1 /* Shared.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F3061B9228E8B0CF0019D52D /* Authentication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F3D4AAC129212BCF00BC83C1 /* Shared.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Shared.framework;
+			remoteRef = F3D4AAC029212BCF00BC83C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F3D4AACC29212C3B00BC83C1 /* Persistent.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Persistent.framework;
+			remoteRef = F3D4AACB29212C3B00BC83C1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3061B9128E8B0CF0019D52D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3061B8F28E8B0CF0019D52D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D40FBC28EB4461001274E1 /* Error.swift in Sources */,
+				F3D40FB828EB3F67001274E1 /* Configuration.swift in Sources */,
+				F3D40FBA28EB41F0001274E1 /* Jwt.swift in Sources */,
+				F3061C8B28EB38880019D52D /* Credentials.swift in Sources */,
+				F3D40F4F28EB399F001274E1 /* RxAuthenticationSerivce.swift in Sources */,
+				F3D40FB428EB3D91001274E1 /* RxAWSMobileClient.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3D4AAC629212BDD00BC83C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Shared;
+			targetProxy = F3D4AAC529212BDD00BC83C1 /* PBXContainerItemProxy */;
+		};
+		F3D4AAD129212C4B00BC83C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Persistent;
+			targetProxy = F3D4AAD029212C4B00BC83C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F3061B9828E8B0CF0019D52D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F3061B9928E8B0CF0019D52D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3061B9B28E8B0CF0019D52D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yauheni.paulavets.Authentication;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F3061B9C28E8B0CF0019D52D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yauheni.paulavets.Authentication;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3061B8D28E8B0CF0019D52D /* Build configuration list for PBXProject "Authentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3061B9828E8B0CF0019D52D /* Debug */,
+				F3061B9928E8B0CF0019D52D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3061B9A28E8B0CF0019D52D /* Build configuration list for PBXNativeTarget "Authentication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3061B9B28E8B0CF0019D52D /* Debug */,
+				F3061B9C28E8B0CF0019D52D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F3F76A3729204150006B1AC2 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm";
+			requirement = {
+				kind = exactVersion;
+				version = 2.28.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F3F76A3829204150006B1AC2 /* AWSAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F76A3729204150006B1AC2 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSAuthCore;
+		};
+		F3F76A3A29204150006B1AC2 /* AWSCognitoIdentityProvider */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F76A3729204150006B1AC2 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCognitoIdentityProvider;
+		};
+		F3F76A3C29204150006B1AC2 /* AWSCognitoIdentityProviderASF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F76A3729204150006B1AC2 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCognitoIdentityProviderASF;
+		};
+		F3F76A3E29204150006B1AC2 /* AWSCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F76A3729204150006B1AC2 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCore;
+		};
+		F3F76A4029204150006B1AC2 /* AWSMobileClientXCF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F3F76A3729204150006B1AC2 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSMobileClientXCF;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F3061B8A28E8B0CF0019D52D /* Project object */;
+}
