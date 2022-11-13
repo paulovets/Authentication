@@ -17,6 +17,7 @@ Possible implementation for Rx driven projects
     <li>A configuration consumption and the login action can be executed in async manner;</li>
     <li>Login and a private part request must be synchronized;</li>
     <li>A token obtained via a social provider is managed within the wrapper, because it's expiration time isn't managed inside AWSMobileClient;</li>
+    <li>Depends on sibling Shared and Persistent frameworks;</li>
 </ul>
 
 # High-level usage
