@@ -10,16 +10,16 @@ import UIKit
 import Shared
 import RxSwift
 
-public protocol AuthenticationSerivceListener {
+public protocol AuthenticationSerivceListener: AnyObject {
+    
+    var configuration: Observable<Configuration> { get }
     
     func logout()
 }
 
 public protocol RxAuthenticationSerivce {
     
-    var listener: AuthenticationSerivceListener { get }
-    
-    var configurationStream: ReplaySubject<Configuration> { get }
+    var listener: AuthenticationSerivceListener? { get }
     
     func application(_ app: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]?)
     

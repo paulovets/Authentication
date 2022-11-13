@@ -14,9 +14,7 @@ import Shared
 
 public final class RxAWSMobileClient: RxAuthenticationSerivce {
     
-    public let listener: AuthenticationSerivceListener
-    
-    public let configurationStream = ReplaySubject<Configuration>.create(bufferSize: 1)
+    public weak var listener: AuthenticationSerivceListener?
     
     private let keychainService: KeychainService
     
@@ -79,7 +77,7 @@ public final class RxAWSMobileClient: RxAuthenticationSerivce {
          self.keychainService = keychainService
          self.listener = listener
         
-        configurationStream
+        listener.configuration
             .map { $0 as? CognitoConfiguration }
             .filterNil()
             .flatMap { [unowned self] in
@@ -141,12 +139,12 @@ public final class RxAWSMobileClient: RxAuthenticationSerivce {
             .map { $0.0 }
             .flatMapLatest { [unowned self] _ -> Completable in
                 // If we have credentials - means it isn't social sign in
-                guard let credentials: Credentials = try? self.keychainService.get() else {
+                guard let credentials: Credentials = self.keychainService.get() else {
                     return self.deleteAuthentication()
                               // We don't emit errors from delete
                               .observe(on: MainScheduler.asyncInstance)
                               .do(onCompleted: {
-                                  self.listener.logout()
+                                  self.listener?.logout()
                               })
                 }
                 
@@ -157,7 +155,7 @@ public final class RxAWSMobileClient: RxAuthenticationSerivce {
                     .do(onError: { _ in
                         self.loginInProgressStream.onNext(false)
                         
-                        self.listener.logout()
+                        self.listener?.logout()
                     }, onCompleted: {
                         self.loginInProgressStream.onNext(false)
                     })
